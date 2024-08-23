@@ -1,0 +1,19 @@
+/* MouseTracker.css */
+
+.mouse-tracker-container {
+    position: relative;
+    height: 100vh; /* Full height to allow tracking across the screen */
+    width: 100vw; /* Full width */
+    overflow: hidden; /* Hide overflow to keep the effect clean */
+  }
+  
+  .mouse-tracker-circle {
+    position: absolute;
+    width: 300px; /* Size of the circle */
+    height: 300px; /* Size of the circle */
+    background-color: rgba(0, 150, 255, 0.6); /* Semi-transparent blue */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Ignore mouse events to keep the circle from interfering with interactions */
+    transition: transform 0.1s ease-out; /* Smooth transition for a more natural feel */
+  }
+  
